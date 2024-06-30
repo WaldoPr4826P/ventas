@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Oswald & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Pangolin & display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Satisfy', cursive;
+
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c2d39d;
+    flex-direction: column;
+}
+header {
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    font-family: 'Satisfy', cursive;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.coupon {
+    background-color: #ddaecc;
+    border: 2px solid #bee6f6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.2s, background-color 0.2s;
+    animation: floating 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.coupon:hover {
+    background-color: #8e6585;
+    transform: scale(1.05);
+}
+
+.coupon.used {
+    background-color: #d3d3d3;
+    color: #777;
+    border-color: #aaa;
+    cursor: not-allowed;
+    animation: none;
+}
+
+.note {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #bee6f6;
+    border: 2px solid #03b2e1;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Pangolin', cursive;
+}
+.heart {
+    font-size: 2em;
+    color: red;
+    margin-top: 10px;
+}
+
+.song-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.song-container h2 {
+    margin-bottom: 10px;
+}
+
+.song-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.song-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.song-links a:hover {
+    text-decoration: underline;
+}

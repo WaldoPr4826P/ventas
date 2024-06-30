@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oswalcupones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.querySelector('title');
+            title.textContent += '\n\nCupones especiales para ti';
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Oswalcupones</h1>
+        <h2>Desde 22 de marzo de 2023 hasta el infinito</h2>
+        <h3>Te amo mi fresita</h3>
+    </header>
+
+    <div class="song-container">
+        <h2>Canciones de la Semana</h2>
+        <div class="song-links">
+            <a href="https://www.youtube.com/watch?v=CMbxzOQc0GI" target="_blank">Escucha la primera canción</a>
+            <a href="https://www.youtube.com/watch?v=oL0LSgBt-LE" target="_blank">Escucha la segunda canción</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="coupon" data-note="Tu yo y la ropa de Spiderman">Encuentro Privado</div>
+        <div class="coupon" data-note="Una salida romántica al restaurante que elijas">Tarde Romántica</div>
+        <div class="coupon" data-note="Disfruta de un almuerzo al aire libre en tu parque favorito">Almuerzo al Aire Libre</div>
+        <div class="coupon" data-note="Cena especial preparada en casa, cuando vivamos juntos">Cena Especial</div>
+        <div class="coupon" data-note="Película en casa con tus snacks favoritos">Película en Casa</div>
+        <div class="coupon" data-note="Encuentro especial en tu lugar favorito, abrazados y que pase lo que tenga que pasar como esa vez en el Chatlat">Encuentro Especial</div>
+        <div class="coupon" data-note="Merienda en el parque con pastel y jugo">Merienda en el Parque</div>
+        <div class="coupon" data-note="Desayuno sorpresa en la cama, imagínate llegar a tu cama con unos Hot-Cakes">Desayuno Sorpresa</div>
+        <div class="coupon" data-note="Unos Takis">Unos Takis</div>
+        <div class="coupon" data-note="Unos tacos al pastor en la tarde noche de nuevo??">Taquitos</div>
+        <div class="coupon" data-note="Este lo vas a adorar, un pvtazo en donde quieras">Un putaso</div>
+        <div class="coupon" data-note="Cena romántica en un restaurante exclusivo">Cena romántica en restaurante</div>
+        <div class="coupon" data-note="Tu y yo Dibujando juntos muy lindo no crees Thalia??">Concurso de dibujo</div>
+        <div class="coupon" data-note="Tu y yo en el balcón de galerías con una hamburguesa">Hamburguesa</div>
+        <div class="coupon" data-note="Una cita en Puebla, qué dices??">Cita en Puebla</div>
+    </div>
+
+    <div class="heart">T &#9825; O</div>
+    <div class="note" id="note"></div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
